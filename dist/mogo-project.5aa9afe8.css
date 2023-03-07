@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+article > * + * {
+  margin-top: 1em;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.works__container {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+}
+.works__container .works__project {
+  position: relative;
+}
+.works__container .works__project .works__project-content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 67, 67, 0.8);
+}
+.works__container .works__project .works__project-content h4 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  min-height: 60px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1024px) {
+  .works__container .works__project .works__project-content h4 {
+    font-size: 18px;
+    line-height: 21px;
+    min-height: 40px;
+    margin-bottom: 6px;
+  }
+}
+.works__container .works__project .works__project-content h5 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10px;
+}
+@media (max-width: 1024px) {
+  .works__container .works__project .works__project-content h5 {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 6px;
+  }
+}
+.works__container .works__project .works__project-content:hover {
+  opacity: 1;
+}
+.works__container .works__project .works__project-content:active {
+  opacity: 1;
+  background: rgba(185, 12, 12, 0.8);
+}
+
+
+/*# sourceMappingURL=/mogo-project.5aa9afe8.css.map */
