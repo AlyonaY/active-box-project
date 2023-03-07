@@ -60,9 +60,8 @@ body {
 .works__container .works__project img {
   height: 100%;
   width: 100%;
-  object-fit: none;
 }
-.works__container .works__project .works__project-content {
+.works__container .works__project-content {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -73,8 +72,9 @@ body {
   align-items: center;
   flex-direction: column;
   background: rgba(255, 67, 67, 0.8);
+  border: 2px solid #FFFFFF;
 }
-.works__container .works__project .works__project-content h4 {
+.works__container .works__project-content h4 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 900;
@@ -89,14 +89,14 @@ body {
   margin-bottom: 10px;
 }
 @media (max-width: 1024px) {
-  .works__container .works__project .works__project-content h4 {
+  .works__container .works__project-content h4 {
     font-size: 18px;
     line-height: 21px;
     min-height: 40px;
     margin-bottom: 6px;
   }
 }
-.works__container .works__project .works__project-content h5 {
+.works__container .works__project-content h5 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -109,16 +109,16 @@ body {
   margin-top: 10px;
 }
 @media (max-width: 1024px) {
-  .works__container .works__project .works__project-content h5 {
+  .works__container .works__project-content h5 {
     font-size: 14px;
     line-height: 16px;
     margin-top: 6px;
   }
 }
-.works__container .works__project .works__project-content:hover {
+.works__container .works__project-content:hover {
   opacity: 1;
 }
-.works__container .works__project .works__project-content:active {
+.works__container .works__project-content:active {
   background: rgba(185, 12, 12, 0.8);
 }
 
