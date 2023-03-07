@@ -1,9 +1,16 @@
 .works__container {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(4, 1fr);
-
+  grid-gap: 2px;
+  
   .works__project {
     position: relative;
+    
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: none; 
+    }
 
     .works__project-content {
       height: 100%;
@@ -16,7 +23,6 @@
       align-items: center;
       flex-direction: column;
       background: rgba(255, 67, 67, 0.8);
-      //   padding: 110px 0 128px 0;
 
       h4 {
         font-family: "Raleway";
@@ -64,7 +70,6 @@
       }
 
       &:active {
-        opacity: 1;
         background: rgba(185, 12, 12, 0.8);
       }
     }

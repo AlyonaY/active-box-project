@@ -52,9 +52,15 @@ body {
 .works__container {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  grid-gap: 2px;
 }
 .works__container .works__project {
   position: relative;
+}
+.works__container .works__project img {
+  height: 100%;
+  width: 100%;
+  object-fit: none;
 }
 .works__container .works__project .works__project-content {
   height: 100%;
@@ -113,7 +119,6 @@ body {
   opacity: 1;
 }
 .works__container .works__project .works__project-content:active {
-  opacity: 1;
   background: rgba(185, 12, 12, 0.8);
 }
 
