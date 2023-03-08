@@ -48,12 +48,19 @@ select {
 .works__container {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+<<<<<<< HEAD
+}
+@media (max-width: 815px) {
+  .works__container {
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+=======
   grid-gap: 2px;
   margin-bottom: 57px;
 }
 @media (max-width: 1324px) {
   .works__container {
     margin-bottom: 39px;
+>>>>>>> main
   }
 }
 .works__container .works__project {
