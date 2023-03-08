@@ -2,9 +2,9 @@
   display: flex;
   max-width: 1510px;
 
-  @media (min-width: 1624px){
+  @media (min-width: 1624px) {
     margin: 0 auto;
-}
+  }
   .team__wrapper {
     max-width: 1510px;
     margin: 0 165px;
@@ -36,6 +36,14 @@
       max-width: 270px;
       margin: 57px 5px;
 
+      @media (max-width: 1024px) {
+        max-width: 227px;
+      }
+
+      @media (max-width: 815px) {
+        max-width: 280px;
+      }
+
       @media (max-width: 1324px) {
         margin: 39px 5px;
       }
@@ -46,10 +54,18 @@
 
       &-photo {
         padding-bottom: 15px;
+
+        @media (max-width: 1024px) {
+          padding-bottom: 13px;
+        }
       }
 
       &-descriprion {
         padding-top: 15px;
+
+        @media (max-width: 1024px) {
+          padding-top: 13px;
+        }
       }
 
       &-name {
@@ -58,11 +74,28 @@
 
       &-title {
         padding-bottom: 9px;
+
+        @media (max-width: 1024px) {
+          padding-bottom: 11px;
+        }
+
+        @media (max-width: 570px) {
+          padding-bottom: 19px;
+        }
       }
 
       &-bio {
         padding-top: 9px;
         padding-bottom: 19px;
+
+        @media (max-width: 1024px) {
+          padding-top: 11px;
+        }
+
+        @media (max-width: 570px) {
+          padding-top: 19px;
+          padding-bottom: 28px;
+        }
       }
 
       h3 {
@@ -119,6 +152,10 @@
         display: flex;
         flex-direction: row;
         padding-top: 19px;
+
+        @media (max-width: 570px) {
+          padding-top: 27px;
+        }
 
         li {
           padding-right: 6px;
