@@ -45,14 +45,16 @@ textarea,
 select {
   font: inherit;
 }
-body {
-  display: flex;
-  justify-content: center;
-}
 .works__container {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(4, 1fr);
   grid-gap: 2px;
+  margin-bottom: 57px;
+}
+@media (max-width: 1324px) {
+  .works__container {
+    margin-bottom: 39px;
+  }
 }
 .works__container .works__project {
   position: relative;
@@ -119,6 +121,130 @@ body {
 }
 .works__container .works__project-content:active {
   background: rgba(185, 12, 12, 0.8);
+}
+.team__container {
+  display: flex;
+}
+.team__container .team__wrapper {
+  max-width: 1510px;
+  margin: 0 165px;
+  width: 100%;
+}
+@media (max-width: 1324px) {
+  .team__container .team__wrapper {
+    margin: 0px 95px;
+  }
+}
+@media (max-width: 1024px) {
+  .team__container .team__wrapper {
+    margin: 0px 15px;
+  }
+}
+@media (max-width: 815px) {
+  .team__container .team__wrapper {
+    margin: 10px 15px;
+  }
+}
+.team__container .team__persons {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 815px) {
+  .team__container .team__persons {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+.team__container .team__person {
+  max-width: 270px;
+  margin: 57px 5px;
+}
+@media (max-width: 1324px) {
+  .team__container .team__person {
+    margin: 39px 5px;
+  }
+}
+@media (max-width: 815px) {
+  .team__container .team__person {
+    margin: 25px 5px;
+  }
+}
+.team__container .team__person-photo {
+  padding-bottom: 15px;
+}
+.team__container .team__person-descriprion {
+  padding-top: 15px;
+}
+.team__container .team__person-name {
+  padding-bottom: 5px;
+}
+.team__container .team__person-title {
+  padding-bottom: 9px;
+}
+.team__container .team__person-bio {
+  padding-top: 9px;
+  padding-bottom: 19px;
+}
+.team__container .team__person h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #2d3033;
+}
+@media (max-width: 1024px) {
+  .team__container .team__person h3 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+.team__container .team__person h4 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ff4343;
+}
+@media (max-width: 1324px) {
+  .team__container .team__person h4 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.team__container .team__person p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #6c7279;
+}
+@media (max-width: 1024px) {
+  .team__container .team__person p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.team__container .team__person-links {
+  display: flex;
+  flex-direction: row;
+  padding-top: 19px;
+}
+.team__container .team__person-links li {
+  padding-right: 6px;
+}
+.team__container .team__person-links li:hover {
+  scale: 1.1;
 }
 
 

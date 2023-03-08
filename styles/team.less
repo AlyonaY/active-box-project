@@ -1,0 +1,129 @@
+.team__container {
+  display: flex;
+
+  .team__wrapper {
+    max-width: 1510px;
+    margin: 0 165px;
+    width: 100%;
+
+    @media (max-width: 1324px) {
+      margin: 0px 95px;
+    }
+
+    @media (max-width: 1024px) {
+      margin: 0px 15px;
+    }
+
+    @media (max-width: 815px){
+        margin: 10px 15px;
+    }
+  }
+
+  .team__persons {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 815px) {
+          flex-wrap: wrap;
+          justify-content: space-evenly;        
+      }
+  }
+
+  .team__person {
+    max-width: 270px;
+    margin: 57px 5px;
+
+    @media (max-width: 1324px) {
+      margin: 39px 5px;
+    }
+
+    @media (max-width: 815px) {
+        margin: 25px 5px;
+      }
+
+    &-photo {
+      padding-bottom: 15px;
+    }
+
+    &-descriprion {
+      padding-top: 15px;
+    }
+
+    &-name {
+      padding-bottom: 5px;
+    }
+
+    &-title {
+      padding-bottom: 9px;
+    }
+
+    &-bio {
+      padding-top: 9px;
+      padding-bottom: 19px;
+    }
+
+    h3 {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      display: flex;
+      align-items: center;
+      text-transform: capitalize;
+      color: #2d3033;
+
+      @media (max-width: 1024px) {
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+
+    h4 {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      color: #ff4343;
+
+      @media (max-width: 1324px) {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    p {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      color: #6c7279;
+
+      @media (max-width: 1024px) {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    &-links {
+      display: flex;
+      flex-direction: row;
+      padding-top: 19px;
+
+      li {
+        padding-right: 6px;
+
+        &:hover{
+            scale: 1.1;
+        }
+      }
+    }
+  }
+}
