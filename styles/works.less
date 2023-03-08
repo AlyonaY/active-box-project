@@ -1,7 +1,10 @@
 .works__container {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(4, 1fr);
-  grid-gap: 2px;
+
+  @media (max-width: 815px){
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+  }
   
   .works__project {
     position: relative;
