@@ -1,6 +1,10 @@
 .team__container {
   display: flex;
+  max-width: 1510px;
 
+  @media (min-width: 1624px){
+    margin: 0 auto;
+}
   .team__wrapper {
     max-width: 1510px;
     margin: 0 165px;
@@ -14,8 +18,8 @@
       margin: 0px 15px;
     }
 
-    @media (max-width: 815px){
-        margin: 10px 15px;
+    @media (max-width: 815px) {
+      margin: 10px 15px;
     }
   }
 
@@ -24,104 +28,104 @@
     justify-content: space-between;
 
     @media (max-width: 815px) {
-          flex-wrap: wrap;
-          justify-content: space-evenly;        
-      }
-  }
-
-  .team__person {
-    max-width: 270px;
-    margin: 57px 5px;
-
-    @media (max-width: 1324px) {
-      margin: 39px 5px;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
 
-    @media (max-width: 815px) {
+    .team__person {
+      max-width: 270px;
+      margin: 57px 5px;
+
+      @media (max-width: 1324px) {
+        margin: 39px 5px;
+      }
+
+      @media (max-width: 815px) {
         margin: 25px 5px;
       }
 
-    &-photo {
-      padding-bottom: 15px;
-    }
+      &-photo {
+        padding-bottom: 15px;
+      }
 
-    &-descriprion {
-      padding-top: 15px;
-    }
+      &-descriprion {
+        padding-top: 15px;
+      }
 
-    &-name {
-      padding-bottom: 5px;
-    }
+      &-name {
+        padding-bottom: 5px;
+      }
 
-    &-title {
-      padding-bottom: 9px;
-    }
+      &-title {
+        padding-bottom: 9px;
+      }
 
-    &-bio {
-      padding-top: 9px;
-      padding-bottom: 19px;
-    }
+      &-bio {
+        padding-top: 9px;
+        padding-bottom: 19px;
+      }
 
-    h3 {
-      font-family: "Raleway";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 28px;
-      display: flex;
-      align-items: center;
-      text-transform: capitalize;
-      color: #2d3033;
+      h3 {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: #2d3033;
 
-      @media (max-width: 1024px) {
+        @media (max-width: 1024px) {
+          font-size: 18px;
+          line-height: 21px;
+        }
+      }
+
+      h4 {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 400;
         font-size: 18px;
         line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #ff4343;
+
+        @media (max-width: 1324px) {
+          font-size: 14px;
+          line-height: 16px;
+        }
       }
-    }
 
-    h4 {
-      font-family: "Raleway";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 21px;
-      display: flex;
-      align-items: center;
-      text-transform: uppercase;
-      color: #ff4343;
+      p {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        color: #6c7279;
 
-      @media (max-width: 1324px) {
-        font-size: 14px;
-        line-height: 16px;
+        @media (max-width: 1024px) {
+          font-size: 14px;
+          line-height: 16px;
+        }
       }
-    }
 
-    p {
-      font-family: "Raleway";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 21px;
-      display: flex;
-      align-items: center;
-      color: #6c7279;
+      &-links {
+        display: flex;
+        flex-direction: row;
+        padding-top: 19px;
 
-      @media (max-width: 1024px) {
-        font-size: 14px;
-        line-height: 16px;
-      }
-    }
+        li {
+          padding-right: 6px;
 
-    &-links {
-      display: flex;
-      flex-direction: row;
-      padding-top: 19px;
-
-      li {
-        padding-right: 6px;
-
-        &:hover{
+          &:hover {
             scale: 1.1;
+          }
         }
       }
     }
