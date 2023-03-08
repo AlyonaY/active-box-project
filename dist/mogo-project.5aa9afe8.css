@@ -61,6 +61,9 @@ body {
   height: 100%;
   width: 100%;
 }
+.works__container .works__project:nth-child(3) {
+  border: 1px solid #FFFFFF;
+}
 .works__container .works__project-content {
   height: 100%;
   width: 100%;
@@ -85,8 +88,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  min-height: 60px;
-  margin-bottom: 10px;
+  margin-bottom: 26px;
 }
 @media (max-width: 1024px) {
   .works__container .works__project-content h4 {
