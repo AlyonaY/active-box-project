@@ -11,8 +11,8 @@
       background: #5c3249;
       width: 100%;
 
-      @media (max-width: 750px) {
-        flex-direction: column;
+      @media (min-width: 1624px) {
+        margin: 0 auto;
       }
 
       &-image {
@@ -20,6 +20,11 @@
 
         @media (max-width: 750px) {
           width: 100%;
+        }
+
+        @media (min-width: 1624px) {
+          display: flex;
+    justify-content: end;
         }
 
         img {
@@ -34,6 +39,12 @@
         flex-direction: column;
         justify-content: center;
         padding: 6% 8%;
+
+        @media (min-width: 1624px) {
+          align-items: flex-start;
+          padding: 0;
+          padding-left: 195px;          
+        }
 
         @media (max-width: 750px) {
           width: 100%;
