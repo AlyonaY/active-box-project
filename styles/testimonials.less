@@ -6,7 +6,7 @@
     width: 100%;
     flex-direction: column;
 
-    .testimonials__content {
+        .testimonials__content {
       display: flex;
       background: #5c3249;
       width: 100%;
@@ -17,6 +17,11 @@
 
       &-image {
         width: 48%;
+
+        @media (min-width: 1624px) {
+          display: flex;
+          justify-content: end;
+        }
 
         @media (max-width: 750px) {
           width: 100%;
@@ -34,6 +39,10 @@
         flex-direction: column;
         justify-content: center;
         padding: 6% 8%;
+
+        @media (min-width: 1624px) {
+          padding: 1% 4%;
+        }
 
         @media (max-width: 750px) {
           width: 100%;
